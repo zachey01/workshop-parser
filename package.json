@@ -1,24 +1,17 @@
 {
-  "name": "workshopparser",
+  "name": "workshop-parser",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "run": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zachey01/workshop-parser.git"
-  },
-  "author": "Zachey <zachey@bk.ru>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zachey01/workshop-parser/issues"
-  },
-  "homepage": "https://github.com/zachey01/workshop-parser",
+  "author": "Zachey",
+  "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "request-promise": "^4.2.6"
-  },
-  "devDependencies": {},
-  "description": "Simple parser for steam workshop on node.js"
+    "cli-table": "^0.3.11",
+    "request-promise": "^4.2.6",
+    "simple-text-parser": "^2.1.1"
+  }
 }
