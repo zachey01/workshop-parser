@@ -1,2 +1,9 @@
-const userId = "76561199219730677"; // ID пользователя на Steam
-const fileName = "worksData.json";
+A simple steam workshop parser on Node.JS
+
+Example:
+
+```javascript
+const workshopparser = require("steamworksparser");
+
+workshopparser("your steam id", "data.json");
+```
