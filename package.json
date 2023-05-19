@@ -1,7 +1,7 @@
 {
   "name": "steamworksparser",
   "version": "1.1.0",
-  "description": "",
+  "description": "A simple steam workshop parser on Node.JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
