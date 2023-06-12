@@ -13,7 +13,9 @@ function workshopparser(userId, fileName) {
 
       worksList.each((index, element, link) => {
         const workTitle = $(element).find(".workshopItemTitle").text(); // название работы
-        const workImg = $(".workshopItemPreviewImage").attr();
+        const workImg = $(element)
+          .find(".workshopItemPreviewImage")
+          .attr("src");
         const workId = $(".workshopItemPreviewHolder").attr();
 
         let workIdnum = workId.id.replace(/\D/g, "");
@@ -21,10 +23,12 @@ function workshopparser(userId, fileName) {
         // сохраняем данные о работе в объект и добавляем его в массив
         const workData = {
           title: workTitle,
-          image: workImg.src,
+          image: workImg,
           id: workIdnum,
         };
-        worksData.push(workData);
+        if (workImg) {
+          worksData.push(workData);
+        }
       });
 
       // сохраняем массив с данными о работах в JSON-файл
